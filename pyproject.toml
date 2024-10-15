@@ -1,5 +1,29 @@
+[project]
+name = "kindleparse"
+version = "0.2.0"
+authors = [{ name = "Kacper Borucki", email = "boots-shingle0q@icloud.com" }]
+description = "Simple tool to convert My Clippings from Kindle to manageable Markdown files."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/borutzki/kindleparse"
+Issues = "https://github.com/borutzki/kindleparse/issues"
+
+[project.scripts]
+kindleparse = "cli:main"
+
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 88
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
