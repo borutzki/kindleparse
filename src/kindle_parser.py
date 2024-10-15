@@ -1,4 +1,4 @@
-from domain.clipping import Book, Clipping
+from clipping import Book, Clipping
 
 import re
 from pathlib import Path
