@@ -68,7 +68,7 @@ def parse_clipping(clipping: str) -> Clipping:
     location: tuple[int, int] | tuple[None, None]
     if "location" in match.groupdict() and match.group("location") is not None:
         location = (int(match.group("location")), int(match.group("location")))
-    elif "location" not in match.groupdict() or match.group("location") is None:
+    elif "location" not in match.groupdict():
         location = (None, None)
     else:
         location = (
