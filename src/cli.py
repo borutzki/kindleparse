@@ -14,7 +14,21 @@ Example:
 """
 
 
-def main(argv):
+def main(argv: list[str] = sys.argv[1:]) -> None:
+    """Minimal CLI interface for kindleparse.
+
+    Parameters
+    ----------
+    argv : list[str], optional
+        CLI arguments, by default sys.argv[1:]
+
+    Default value here is provided for CLI installed with `pip` to be working.
+
+    Raises
+    ------
+    SystemExit
+        _description_
+    """
     # Verification of list of args
     if len(argv) != 2:
         raise SystemExit(DESCRIPTION)

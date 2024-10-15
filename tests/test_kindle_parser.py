@@ -5,7 +5,7 @@ from src.kindle_parser import (
     sort_clippings,
     dump_book_to_markdown,
 )
-from src.domain.clipping import Clipping, Book
+from src.clipping import Clipping, Book
 from dataclasses import asdict
 
 

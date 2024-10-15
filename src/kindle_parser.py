@@ -1,4 +1,4 @@
-from domain.clipping import Book, Clipping
+from clipping import Book, Clipping
 
 import re
 from pathlib import Path
@@ -191,8 +191,8 @@ def dump_book_to_markdown(
             # TODO: Sort clippings by their timestamps.
             # TODO: Split functionality for headers and content
             # TODO: As templates are added,
-            file.write(f"First note: {clippings[0].timestamp}\n")
-            file.write(f"Last note: {clippings[-1].timestamp}\n\n")
+            file.write(f"**First note**: {clippings[0].timestamp}\n")
+            file.write(f"**Last note**: {clippings[-1].timestamp}\n\n")
             file.write("## Notes & Highlights from Kindle\n\n")
 
             for clipping in clippings:
